@@ -1,0 +1,148 @@
+1. Kahve Dükkanı Sipariş Sistemi
+• Senaryo: Kahve sınıfı (Boyut, Tur, Fiyat) tanımlayın.
+• Arayüz: Kahve türü (Latte, Mocha, Americano) için RadioButton, ekstralar (Süt,
+Şurup, Krema) için CheckBox.
+• Mantık: Kahve boyutuna göre (Küçük, Orta, Büyük) taban fiyatı switch-case ile
+belirleyin. Try-Catch ile adet girişini kontrol edin.
+• Döngü: Müşteri 5 adetten fazla sipariş verirse, for döngüsü ile her 5. kahveyi bedava
+yapacak (fiyatı 0 alacak) bir hesaplama yapın.
+• Çıktı: Sipariş detaylarını ListBox'a, toplam tutarı Label'a yazdırın. PictureBox'ta kahve
+resmi değişsin.
+2. Kargo Fiyatlandırma Uygulaması
+• Senaryo: Kargo sınıfı (Agirlik, Mesafe, UcretHesapla()) oluşturun.
+• Arayüz: Gönderim hızı (Standart, Hızlı, VIP) için RadioButton, ek hizmetler (Sigorta,
+Kırılabilir Eşya, SMS) için CheckBox.
+• Mantık: Mesafe ve ağırlık TextBox'tan alınır. Mesafe 500km üzeriyse ve VIP seçiliyse
+ekstra %20 zam yapan if-else yapısı kurun.
+• Döngü: Kullanıcı "Çoklu Gönderim" seçerse, while döngüsü ile rastgele 5 farklı paket
+ağırlığı üretip ortalama kargo maliyeti çıkarın.
+• Çıktı: Fatura dökümü RichTextBox'a yazılır.
+3. Oyun Karakteri Oluşturma Ekranı
+• Senaryo: Karakter sınıfı (Ad, Irk, Guc, Zeka) tanımlayın.
+• Arayüz: Irk (İnsan, Elf, Ork) için RadioButton, Başlangıç Eşyaları (Kılıç, Kalkan, İksir)
+için CheckBox ve GroupBox.
+• Mantık: Toplam 100 yetenek puanı vardır. Kullanıcı TextBox ile Güç ve Zeka girer. If
+kontrolü ile toplam 100'ü geçerse hata verin (MessageBox).
+• Döngü: "Savaş Simülasyonu" butonuna basınca, do-while ile karakterin canı 0 olana
+kadar rastgele hasar aldığı bir döngü kurun ve kaç tur dayandığını hesaplayın.
+• Çıktı: Karakter özellikleri ListBox'ta listelenir. Irka göre PictureBox değişir.
+2
+4. Elektrik Faturası Hesaplayıcı
+• Senaryo: Abone sınıfı (AboneNo, OkumaDegeri, Tip) oluşturun.
+• Arayüz: Abone Tipi (Mesken, Ticarethane) RadioButton, İndirimler (Emekli, Şehit
+Yakını) CheckBox.
+• Mantık: İlk ve son endeks girilir (Try-Catch). Tüketim miktarına göre kademeli tarife
+(150kw altı/üstü) if-else ile hesaplanır.
+• Döngü: "Yıllık Tahmin" butonuna basınca for döngüsü ile 12 ay için %5 enflasyon
+farkı koyarak tahmini yıllık faturayı hesaplayın.
+• Çıktı: Detaylı fatura RichTextBox'ta gösterilir.
+5. Online Sınav ve Puanlama
+• Senaryo: Ogrenci ve Sinav sınıfları kullanın.
+• Arayüz: 4 adet soru sorun, cevaplar için RadioButton kullanın. "Emin değilim"
+seçeneği için CheckBox.
+• Mantık: Her doğru cevap 25 puandır. Yanlış cevapta 5 puan silen if-else yapısı kurun.
+Emin değilim işaretliyse puan düşmeyin.
+• Döngü: Sınav bitince while döngüsü ile öğrencinin puanını 100 üzerinden harf notuna
+(AA, BB, CC...) dönüştüren aralık kontrolü yapın.
+• Çıktı: Sonuç ve başarı durumu Label ve ProgressBar (veya renkli Panel) ile gösterilir.
+6. Araba Servis Bakım Takip
+• Senaryo: Islem sınıfı (ParcaAdi, IscilikUcreti) tanımlayın.
+• Arayüz: Bakım Tipi (Periyodik, Ağır Bakım) RadioButton, Değişenler (Yağ, Filtre,
+Balata) CheckBox.
+• Mantık: Class içindeki metot, seçilen parçaların fiyatlarını toplar. Ağır bakım seçiliyse
+işçiliğe %50 ekleyen if yapısı kullanın.
+• Döngü: ListBox'a eklenen parça listesi üzerinde foreach ile dönerek toplam parça
+maliyeti ile işçilik maliyetini ayrı ayrı hesaplayın.
+• Çıktı: Fatura RichTextBox'a yazılır. Resim kutusunda araba şeması görünür.
+3
+7. Cep Telefonu Tarifesi Seçimi
+• Senaryo: Tarife sınıfı (Ad, Dakika, Internet, Fiyat) oluşturun.
+• Arayüz: Paket (Eko, Süper, Mega) RadioButton, Ek Paket (Spotify, Netflix, Youtube)
+CheckBox.
+• Mantık: Taahhüt süresi (12/24 ay) TextBox'a girilir (Try-Catch). 24 ay seçilirse fiyattan
+%10 düşen Switch-Case yapısı kurun.
+• Döngü: Kullanıcının girdiği aylık internet kullanımını do-while ile kontrol edip, kota
+aşımı varsa her GB için ek ücret hesaplayın.
+• Çıktı: Aylık ödenecek tutar Label'da, paket içeriği ListBox'ta gösterilir.
+8. İnşaat Maliyet Hesaplama
+• Senaryo: Daire sınıfı (Metrekare, OdaSayisi, Cephe) tanımlayın.
+• Arayüz: Malzeme Kalitesi (Lüks, Orta, Ekonomik) RadioButton, Ekstralar (Duvar
+Kağıdı, Kartonpiyer, Parke) CheckBox.
+• Mantık: Metrekare başına birim fiyat belirlenir. Lüks seçilirse birim fiyatı 2 ile çarpan
+if-else yapısı kullanın. Sayısal hatalar için try-catch.
+• Döngü: For döngüsü ile binadaki kat sayısını (kullanıcı girecek) dönerek, her kat
+çıktıkça maliyetin %2 arttığı (işçilik zorluğu) bir toplam maliyet hesaplayın.
+• Çıktı: Toplam inşaat maliyeti RichTextBox'a yazılır.
+9. Halı Saha Maç Organizasyonu
+• Senaryo: Mac sınıfı (Tarih, Saat, Ucret) oluşturun.
+• Arayüz: Saha Tipi (Açık, Kapalı) RadioButton, Ekipman (Yelek, Eldiven, Krampon)
+CheckBox.
+• Mantık: Akşam 19:00'dan sonra ise gece tarifesi uygulayan if yapısı. Kişi başı ücreti
+hesaplayan metot.
+• Döngü: 14 kişilik oyuncu kadrosu olduğunu varsayın. While döngüsü ile eksik oyuncu
+sayısına göre kişi başı düşen ücreti dinamik hesaplayın.
+• Çıktı: Rezervasyon fişi ListBox'a eklenir.
+4
+10. Otobüs Bileti Rezervasyonu
+• Senaryo: Yolcu sınıfı (Ad, KoltukNo, Cinsiyet) kullanın.
+• Arayüz: Cinsiyet (Kadın, Erkek) RadioButton, Hizmet (Kek, İçecek, Wifi) CheckBox.
+• Mantık: Yan yana koltuklarda (Örn: 3 ve 4) farklı cinsiyet olamaz kuralını if-and (&&)
+ile kontrol edin.
+• Döngü: Otobüs doluluk oranını simüle etmek için rastgele bir for döngüsü ile
+koltukları doldurun ve kalan boş koltuk sayısını bulun.
+• Çıktı: Bilet görseli PictureBox ve bilgiler RichTextBox ile gösterilir.
+11. Banka Kredi Hesaplama
+• Senaryo: Kredi sınıfı (AnaPara, Faiz, Vade) oluşturun.
+• Arayüz: Kredi Türü (İhtiyaç, Taşıt, Konut) RadioButton, Masraflar (Dosya, Sigorta)
+CheckBox.
+• Mantık: Ana para girişi Try-Catch ile korunur. Kredi türüne göre faiz oranını SwitchCase ile atayın.
+• Döngü: For döngüsü ile her ay ödenecek taksiti, kalan ana parayı ve ödenen faizi
+hesaplayıp bir "Ödeme Planı" oluşturun.
+• Çıktı: Ödeme planı satır satır ListBox'a yazılır.
+12. Diyetisyen Kalori Takip
+• Senaryo: Danisan sınıfı (Ad, Kilo, Hedef) tanımlayın.
+• Arayüz: Aktivite Düzeyi (Az, Orta, Çok) RadioButton, Yasaklar/Alerji (Gluten, Şeker,
+Laktoz) CheckBox.
+• Mantık: Bazal metabolizma hızını hesaplayan metot. Aktivite düzeyine göre katsayı
+ile çarpan if-else if yapısı.
+• Döngü: Hedef kiloya ulaşmak için günlük 500 kalori açık verildiğinde kaç günde
+hedefe ulaşılacağını while döngüsü ile hesaplayın.
+• Çıktı: Günlük alması gereken kalori ve diyet listesi önerisi RichTextBox'ta gösterilir.
+5
+13. Toptan Gıda Satış
+• Senaryo: Urun sınıfı (Ad, KoliAdeti, BirimFiyat) oluşturun.
+• Arayüz: Ödeme Tipi (Nakit, Kredi Kartı, Çek) RadioButton, İndirim (Bayi, Yeni
+Müşteri) CheckBox.
+• Mantık: Koli adeti 10'un altındaysa satış yapmayan (throw hata fırlatan) try-catch
+yapısı. Nakit ödemede %10 indirim.
+• Döngü: Stoktaki ürünleri simüle eden bir dizi üzerinde foreach ile dönüp, stoğu
+azalan ürünleri (kritik seviye) tespit edin.
+• Çıktı: Fatura ve stok uyarısı ListBox'ta gösterilir.
+14. Taksi Ücret Hesaplayıcı
+• Senaryo: Yolculuk sınıfı (Mesafe, Sure, AcilisUcreti) tanımlayın.
+• Arayüz: Tarife (Gündüz, Gece) RadioButton, Ekstralar (Köprü Geçişi, Otoban,
+Bekleme) CheckBox.
+• Mantık: Kilometre başı ücret gece tarifesinde %50 fazladır (if-else). Negatif mesafe
+girilirse try-catch devreye girer.
+• Döngü: Trafik yoğunluğunu simüle etmek için do-while döngüsü ile her kilometrede
+rastgele bir bekleme süresi ekleyip ücreti artırın.
+• Çıktı: Taksimetre ekranı gibi bir Label ve fiş dökümü RichTextBox.
+15. Yazılım Kursu Kayıt Formu
+• Senaryo: Kursiyer sınıfı (Ad, EgitimDurumu, Yas) oluşturun.
+• Arayüz: Eğitim (C#, Java, Python) RadioButton, Materyal (Kitap, Video Seti, Sertifika)
+CheckBox.
+• Mantık: Yaş 18'den küçükse veli izni isteyen (CheckBox kontrolü) bir if yapısı. Eğitim
+türüne göre fiyatı switch-case belirler.
+• Döngü: Kursiyer taksitli ödeme seçerse, for döngüsü ile vade farkı ekleyerek (her ay
+için %2) taksit tablosu oluşturun.
+• Çıktı: Kayıt formu özeti RichTextBox'a yazılır. Dil logosu PictureBox'ta görünür.
+6
+16. E-Ticaret Sepet Uygulaması
+• Senaryo: Sepet ve Urun sınıfları tanımlayın.
+• Arayüz: Kategori (Elektronik, Giyim) GroupBox içinde RadioButtonlar, Kargo
+Seçenekleri (Aynı Gün, Standart) CheckBox.
+• Mantık: Sepet tutarı 500 TL üzeriyse kargoyu bedava yapan, altındaysa ücret
+ekleyen if-else mantığı. Metot ile toplam hesapla.
+• Döngü: Sepete 3 farklı ürün eklendiğini varsayın. While döngüsü ile "3 al 2 öde"
+kampanyasını en ucuz ürünü bularak uygulayın.
+• Çıktı: Sepetinizdeki ürünler ve son tutar ListBox'ta listelenir.
